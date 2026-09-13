@@ -1,0 +1,911 @@
+
+/* =========================
+    GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    margin: 0;
+}
+
+/* =========================
+    HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    padding: 0 50px;
+
+    background-color: #f3c969;
+}
+
+/* Logo */
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8b5e3c;
+}
+
+
+/* =========================
+    CURVED HEADER
+========================= */
+
+.header-curve {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+/* Yellow part */
+
+.curve-fill {
+    fill: #f3c969;
+}
+
+/* Black curved line */
+
+.curve-line {
+    fill: none;
+    stroke: black;
+    stroke-width: 5;
+}
+
+/* =========================
+    HOME SECTION
+========================= */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+
+    min-height: 500px;
+
+    padding: 70px 100px;
+}
+
+
+/* Cookie Image */
+
+.home-image {
+    width: 50%;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* Home Text */
+
+.home-content {
+    width: 50%;
+    max-width: 600px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+.home-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Tagline */
+
+.tagline {
+    margin-top: 40px;
+    font-size: 18px !important;
+}
+
+
+/* Menu Button */
+
+.menu-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    background-color: #f5a000;
+    color: white;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-button:hover {
+    background-color: #d98900;
+}
+
+
+/* =========================
+    ABOUT US SECTION
+========================= */
+#about {
+    background-color: #b9dce3;
+
+    border-top: 3px solid black;
+
+    min-height: 500px;
+    padding: 60px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* About Heading */
+
+    #about h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* About Description */
+
+.about-description {
+    max-width: 900px;
+
+    margin: 0 auto 40px auto;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Mission and Vision Container */
+
+.about-cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    margin-top: 30px;
+}
+
+
+/* Individual Cards */
+
+.about-card {
+    width: 500px;
+
+    min-height: 180px;
+
+    background-color: white;
+
+    padding: 30px 35px;
+
+    border: 1px solid #333;
+
+    border-radius: 18px;
+}
+
+
+/* Card Headings */
+
+.about-card h3 {
+    margin: 0 0 15px 0;
+
+    font-size: 20px;
+}
+
+
+/* Card Paragraphs */
+
+.about-card p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 2.0;
+}
+
+/* =========================
+    PRODUCTS SECTION
+========================= */
+
+#products {
+    background-color: #ffeec9;
+
+    border-top: 3px solid black;
+
+    min-height: 500px;
+    padding: 60px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+#products h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* Products Container */
+
+.products-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+/* Individual Product Card */
+
+.product-card {
+    position: relative;
+
+    width: 300px;
+    height: 400px;
+
+    background-color: #ffffff;
+
+    padding: 30px 10px 10px 10px;
+
+    border: 1px solid #333;
+    border-radius: 18px;
+
+    text-align: center;
+
+    overflow: visible;
+}
+        
+.product-card h3 {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+.product-card p {
+    margin: 8px 0 0 0;
+
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+/* Button Product Card */
+
+.product-card .buy-button {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #f5a000;
+    color: white;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.product-card .buy-button:hover {
+    background-color: #d98900;
+}
+
+.product-card img {
+    position: absolute;
+
+    left: 5px;
+    bottom: -30px;
+
+    width: 200px;
+    height: 300px;
+
+    object-fit: contain;
+}
+
+.product-price {
+    position: absolute;
+
+    right: 10px;
+    bottom: 45px;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* =========================
+    FEATURES SECTION
+========================= */
+
+#features {
+    background-color: #ffffff;
+
+    border-top: 3px solid black;
+
+    min-height: 650px;
+
+    padding: 60px 60px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+/* Features Heading */
+
+#features h2 {
+    margin: 0 0 30px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* Features Container */
+
+.features-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 30px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* Individual Feature Cards */
+
+.features-card {
+    background-color: #b9dce3;
+
+    min-height: 200px;
+
+    padding: 10px 25px;
+
+    border: 1px solid #333;
+
+    border-radius: 18px;
+
+    text-align: left;
+}
+
+
+/* Card Headings */
+
+.features-card h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 25px;
+}
+
+
+/* Card Paragraphs */
+
+.features-card p {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+/* =========================
+   EMPLOYEES SECTION
+========================= */
+
+#employees {
+    background-color: #b9dce3;
+
+    border-top: 3px solid black;
+
+    min-height: 500px;
+
+    padding: 60px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+/* Employee Heading */
+
+#employees h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Employee Name */
+
+.employees-container h3 {
+    margin: 10px 0 0 0;
+
+    font-size: 20px;
+
+    text-align: center;
+}
+
+
+/* Employee Description */
+
+.employees-container p {
+    margin: 8px 0 0 0;
+
+    font-size: 15px;
+
+    line-height: 1.2;
+
+    text-align: center;
+}
+
+/* Employee Containers */
+
+.employees-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin: 0 auto;
+}
+
+
+/* Individual Employee Container */
+
+.employees-container {
+    width: 400px;
+    height: 280px;
+
+    background-color: white;
+
+    border: 1px solid #333;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Employees Picture */
+
+.employees-container img {
+    width: 150px;
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FEEDBACK SECTION
+========================= */ 
+
+#feedback {
+    background-color: #ffeec9;
+
+    border-top: 3px solid black;
+
+    min-height: 500px;
+
+    padding: 60px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+/* Feedback Heading */
+
+#feedback h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Feedback Containers */
+
+.feedback-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin: 0 auto;
+}
+
+
+/* Individual Feedback Container */
+
+.feedback-container {
+    width: 400px;
+    height: 280px;
+
+    background-color: white;
+
+    border: 1px solid #333;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Feedback Pictures */
+
+.feedback-container img {
+    width: 300px;
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+/* =========================
+    CONTACT US SECTION
+========================= */
+#contact {
+    background-color: #b9dce3;
+
+    border-top: 3px solid black;
+
+    min-height: 500px;
+    padding: 60px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+/* Contact Heading */
+
+#contact h2 {
+    margin: 0 0 25px 0;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Contact Description */
+
+.contact-description {
+    max-width: 800px;
+
+    margin: 0 auto 40px auto;
+
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+/* =========================
+    CONTACT FORM
+========================= */
+
+.contact-form {
+    width: 600px;
+    max-width: 100%;
+
+    margin: 40px auto 0 auto;
+
+    padding: 35px 40px;
+
+    background-color: white;
+
+    border: 1px solid #333;
+    border-radius: 18px;
+
+    text-align: left;
+}
+
+
+/* Form Heading */
+
+.contact-form h3 {
+    margin: 0 0 25px 0;
+
+    font-size: 25px;
+
+    text-align: center;
+}
+
+
+/* Form Labels */
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Input and Textarea */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    background-color: #ffeec9;
+
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+/* Message Box */
+
+.contact-form textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+
+/* Input Focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid #f5a000;
+}
+
+
+/* Send Message Button */
+
+.contact-form button {
+    display: block;
+
+    margin: 5px auto 0 auto;
+
+    padding: 12px 30px;
+
+    background-color: #f5a000;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+
+.contact-form button:hover {
+    background-color: #d98900;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #f3c969;
+
+    border-top: 3px solid black;
+
+    min-height: 300px;
+
+    padding: 50px 80px 30px 80px;
+
+    text-align: center;
+
+    font-family: "Century Gothic", sans-serif;
+}
+
+
+/* =========================
+   FOOTER BUSINESS
+========================= */
+
+.footer-business {
+    margin-bottom: 20px;
+}
+
+.footer-business img {
+    display: block;
+
+    width: 150px;
+    height: auto;
+
+    margin: 0 auto 5px auto;
+}
+
+.footer-business p {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-columns {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 150px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.footer-links h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #8b5e3c;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.footer-contact h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 20px;
+}
+
+.footer-contact p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom {
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 13px;
+}
